@@ -37,6 +37,9 @@ pins.onPulsed(DigitalPin.P16, PulseValue.High, function () {
 pins.onPulsed(DigitalPin.P8, PulseValue.High, function () {
     lecteur(1, "abcd")
 })
+input.onButtonPressed(Button.A, function () {
+    _2()
+})
 function _2 () {
     if (_16 == 0 && (_12 == 0 && _8 == 1)) {
         basic.showString("-10")
