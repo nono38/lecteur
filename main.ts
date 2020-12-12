@@ -37,6 +37,39 @@ pins.onPulsed(DigitalPin.P16, PulseValue.High, function () {
 pins.onPulsed(DigitalPin.P8, PulseValue.High, function () {
     lecteur(1, "abcd")
 })
+function _2 () {
+    if (_16 == 0 && (_12 == 0 && _8 == 1)) {
+        basic.showString("-10")
+        SOMME_ILIAN = 10 - SOMME_ILIAN
+        basic.pause(100)
+        basic.showString("somme")
+        basic.showString("" + (SOMME_ILIAN))
+    } else {
+        if (_16 == 0 && (_12 == 1 && _8 == 0)) {
+            basic.showString("-10")
+            SOMME_NOAH = 10 - SOMME_NOAH
+            basic.pause(100)
+            basic.showString("somme")
+            basic.showString("" + (SOMME_NOAH))
+        } else {
+            if (_16 == 1 && (_12 == 1 && _8 == 0)) {
+                basic.showString("-10")
+                SOMME_RYAN = 10 - SOMME_RYAN
+                basic.pause(100)
+                basic.showString("somme")
+                basic.showString("" + (SOMME_RYAN))
+            } else {
+                if (_16 == 0 && (_12 == 1 && _8 == 1)) {
+                    basic.showString("-10")
+                    SOMME_PAPA = 10 - SOMME_PAPA
+                    basic.pause(100)
+                    basic.showString("somme ")
+                    basic.showString("" + (SOMME_PAPA))
+                }
+            }
+        }
+    }
+}
 function lecteur (num: number, texte: string) {
     basic.pause(500)
     basic.clearScreen()
